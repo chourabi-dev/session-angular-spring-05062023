@@ -1,0 +1,51 @@
+<h1>hello world</h1>
+
+<p>trying to get data from TS file !!!</p>
+
+
+<p>
+  {{  counter  }}
+</p>
+
+<p>
+  {{ username }}
+</p>
+
+
+
+<p>
+  {{ employee.username }} / {{ employee.email }} / {{ employee.dep }}
+</p>
+
+
+<div>
+  {{ employees }}
+</div>
+
+
+
+<div>
+ 
+  <ul> 
+    <!-- *ngFor -->
+
+    <li  *ngFor="let u of users" >
+      <h3>{{u.name}}</h3>
+      <p>{{u.phone}}</p>
+    </li>
+
+
+  </ul>
+</div>
+
+
+
+
+
+<div *ngIf=" showBloc == true ">
+  <h3>bonjour</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium dignissimos dolore odit deleniti unde ea dicta delectus, debitis quae illo inventore odio aperiam, iusto quibusdam. Quibusdam quia tempore repellendus.
+  </p>
+</div>
+

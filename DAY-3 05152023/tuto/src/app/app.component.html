@@ -1,0 +1,95 @@
+<!--
+<h1>hello world</h1>
+
+<p>trying to get data from TS file !!!</p>
+
+
+<p>
+  {{  counter  }}
+</p>
+
+<p>
+  {{ username }}
+</p>
+
+
+
+<p>
+  {{ employee.username }} / {{ employee.email }} / {{ employee.dep }}
+</p>
+
+
+<div>
+  {{ employees }}
+</div>
+
+
+
+<div>
+ 
+  <ul> 
+     
+
+    <li  *ngFor="let u of users" >
+      <h3 *ngIf=" u.newUser == true " style="color:green">{{u.name}}</h3>
+      <h3 *ngIf=" u.newUser == false " style="color:orange">{{u.name}}</h3>
+
+      <p>{{u.phone}}</p>
+    </li>
+
+    <li  *ngFor="let u of users" >
+      <h3   class="x y"   [ngClass]=" u.newUser == true ? 'new-user' : 'old-user' " >{{u.name}}</h3>
+      
+      <p>{{u.phone}}</p>
+    </li>
+
+  </ul>
+</div>
+
+
+<div *ngIf=" showBloc == true ">
+  <h3>bonjour</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium dignissimos dolore odit deleniti unde ea dicta delectus, debitis quae illo inventore odio aperiam, iusto quibusdam. Quibusdam quia tempore repellendus.
+  </p>
+</div>-->
+
+
+<!-- attributes -->
+
+
+<!--
+
+<img [src]="imageSourceURL"  width="100%"/>
+
+<button   (click)="previous()" >previous</button>
+<button   (click)="next()"   >next</button>-->
+
+<!--*********************************** componnets*********************************-->
+
+<app-navbar></app-navbar>
+
+
+<div class="container mt-5">
+  <h3>Welcome to our app</h3>
+
+  <div class="row">
+    <div class="col-3">
+      <app-sidemenu></app-sidemenu>
+    </div>
+
+    <div class="col-9">
+      
+      <app-article></app-article>
+      
+      <app-article></app-article>
+      
+      <app-article></app-article>
+      
+      <app-article></app-article>
+      
+      <app-article></app-article>
+      
+    </div>
+  </div>
+</div>
