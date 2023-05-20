@@ -16,3 +16,8 @@ ng g c comp_name
 
 ** install bootstrap **
 npm i bootstrap
+
+
+
+** routing , create new guard **
+ng g g guard_name
