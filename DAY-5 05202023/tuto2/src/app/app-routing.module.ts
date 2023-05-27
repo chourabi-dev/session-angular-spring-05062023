@@ -7,6 +7,9 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { TeamAboutPageComponent } from './pages/team-about-page/team-about-page.component';
 import { HitoricAboutPageComponent } from './pages/hitoric-about-page/hitoric-about-page.component';
 import { authGuard } from './auth.guard';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
+import { NotesComponent } from './pages/notes/notes.component';
+import { AddNoteComponent } from './pages/add-note/add-note.component';
 
 const routes: Routes = [
   //{ path:'', redirectTo:'home', pathMatch:'full' },
@@ -18,6 +21,15 @@ const routes: Routes = [
     
   ]},
   { path:'profile', component:ProfilePageComponent, canActivate:[authGuard] },
+
+  { path:'create-account', component:CreateAccountComponent },
+
+
+
+  { path:'notes', component:NotesComponent },
+  { path:'notes/add', component:AddNoteComponent },
+
+  
 
   { path:'**', component:NotFoundPageComponent }, // WILD CARD 
 

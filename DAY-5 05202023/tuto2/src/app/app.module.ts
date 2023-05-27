@@ -10,6 +10,10 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { NavbarComponent } from './componenets/navbar/navbar.component';
 import { TeamAboutPageComponent } from './pages/team-about-page/team-about-page.component';
 import { HitoricAboutPageComponent } from './pages/hitoric-about-page/hitoric-about-page.component';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { NotesComponent } from './pages/notes/notes.component';
+import { AddNoteComponent } from './pages/add-note/add-note.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,16 @@ import { HitoricAboutPageComponent } from './pages/hitoric-about-page/hitoric-ab
     NotFoundPageComponent,
     NavbarComponent,
     TeamAboutPageComponent,
-    HitoricAboutPageComponent
+    HitoricAboutPageComponent,
+    CreateAccountComponent,
+    NotesComponent,
+    AddNoteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

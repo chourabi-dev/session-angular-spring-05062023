@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <a routerLink="/notes/add">add new note</a>
+
+
+
+    <ul>
+        <li *ngFor="let note  of notes">
+            <p class="text-muted">
+                {{ note }}
+            </p>
+        </li>
+        
+        
+    </ul>
+</div>

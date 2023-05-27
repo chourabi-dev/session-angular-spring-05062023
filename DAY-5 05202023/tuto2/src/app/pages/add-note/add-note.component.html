@@ -1,0 +1,15 @@
+<div class="container mt-5">
+    <a routerLink="/notes">Back to list</a>
+
+
+
+    <form [formGroup]="noteForm" (ngSubmit)="add()" >
+        <div class="mb-3">
+            <textarea rows="5" class="form-control" formControlName="note"></textarea>
+        
+        </div>
+
+        <button class="btn btn-primary" type="submit" [disabled]=" ! noteForm.valid">Add note</button>
+    </form>
+
+</div>

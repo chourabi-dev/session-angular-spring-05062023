@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <form  [formGroup]="createAccountForm"  (ngSubmit)="createAccount()"  >
+
+        <div class="mb-3">
+            <label for="">fullname</label>
+            <input type="text" class="form-control" formControlName="fullname" />
+
+            <p class="text-danger"  *ngIf=" createAccountForm.controls.fullname.valid == false ">
+                <small> this feild is required, and 10 chrs of min length </small>
+            </p>
+        </div>
+        <div class="mb-3">
+            <label for="">Email</label>
+            <input type="email" class="form-control" formControlName="email" />
+            <p class="text-danger"  *ngIf=" createAccountForm.controls.email.valid == false ">
+                <small> this feild is required</small>
+            </p>
+        </div>
+        <div class="mb-3">
+            <label for="">password</label>
+            <input type="password" class="form-control" formControlName="password" />
+            <p class="text-danger"  *ngIf=" createAccountForm.controls.password.valid == false ">
+                <small> this feild is required</small>
+            </p>
+        </div>
+        
+
+        <div class="mb-3">
+            <button [disabled]=" ! createAccountForm.valid " class="btn btn-primary" type="submit">Create accout</button>
+        </div>
+        
+
+        <p>
+            {{ createAccountForm.valid }}
+        </p>
+
+
+    </form>
+</div>
